@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calorator.Capture"
+             Title="Capture Calories">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label x:Name="Picker" Text="Camera Picker" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                <Image x:Name="ResultImage"></Image>
+                <Button x:Name="TakePic" Text="Upload Picture" Clicked="TakePic_Clicked"></Button>
+                <Button x:Name="UseCamera" Text="Take by Camera" Clicked="UseCamera_Clicked"></Button>
+                <Button x:Name="Navigate" Text="Calculate" Clicked="Navigate_Clicked"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

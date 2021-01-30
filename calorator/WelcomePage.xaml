@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calorator.WelcomePage"
+             Title="Calorator">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame BorderColor="#006EFF" CornerRadius="10" HasShadow="True" BackgroundColor="AliceBlue">
+                    <Label Text="Calorator" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Large" />
+                </Frame>
+                <Image Source="Caloratorimage.jpg" HorizontalOptions="Center" VerticalOptions="Center"></Image>
+                <Label Text="Your Gender: "></Label>
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <RadioButton x:Name="rbtM" IsChecked="True" GroupName="Gender" Grid.Column="0" Grid.Row="0"></RadioButton>
+                    <Label Text="Male" Grid.Column="1" Grid.Row="0" ></Label>
+                    <RadioButton x:Name="rbtF" GroupName="Gender" Grid.Column="2" Grid.Row="0"></RadioButton>
+                    <Label Text="Female" Grid.Column="3" Grid.Row="0"></Label>
+                    <Label Text="Exercise Level: " Grid.ColumnSpan="2" Grid.Row="1"></Label>
+                    <RadioButton x:Name="No" GroupName="Activity" Grid.Column="0" Grid.Row="2" IsChecked="True"></RadioButton>
+                    <Label Text="No" Grid.Column="1" Grid.Row="2"></Label>
+                    <RadioButton x:Name="Light" GroupName="Activity" Grid.Column="2" Grid.Row="2"></RadioButton>
+                    <Label Text="Light" Grid.Column="3" Grid.Row="2"></Label>
+                    <RadioButton GroupName="Activity" Grid.Column="4" Grid.Row="2"></RadioButton>
+                    <Label x:Name="Heavy" Text="Heavy" Grid.Column="5" Grid.Row="2"></Label>
+                </Grid>
+                <Label Text=" Your Height: "></Label>
+                <Entry x:Name="H" Placeholder="in cm"></Entry>
+                <Label Text=" Your Weight: "></Label>
+                <Entry x:Name="W" Placeholder="in kg"></Entry>
+                <Label Text=" Your Age: "></Label>
+                <Entry x:Name="A" Placeholder="in years"></Entry>
+                <Button Text=" Comfirm " Clicked="Button_Clicked"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

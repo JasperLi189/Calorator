@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calorator.CameraCal">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="Calories" Placeholder="Enter the Calories"></Entry>
+            <Button x:Name="Calculate" Text="Calculate" Clicked="Calculate_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

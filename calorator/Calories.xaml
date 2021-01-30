@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calorator.Calories"
+             Title="Calories">
+    <ContentPage.Content>
+        <Grid Margin="10,10,10,10" x:Name="MyGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button x:Name="F" Grid.Row="0" Grid.Column="0" Text="Fruits" Clicked="F_Clicked"></Button>
+            <Button x:Name="V" Grid.Row="0" Grid.Column="1" Text="Veg" Clicked="V_Clicked"></Button>
+            <Button x:Name="G" Grid.Row="1" Grid.Column="0" Text="Grains" Clicked="G_Clicked"></Button>
+            <Button x:Name="B" Grid.Row="1" Grid.Column="1" Text="Beverage" Clicked="B_Clicked"></Button>
+            <Button x:Name="M" Grid.Row="2" Grid.Column="0" Text="Meat" Clicked="M_Clicked"></Button>
+            <Button x:Name="O" Grid.Row="2" Grid.Column="1" Text="Other" Clicked="O_Clicked"></Button>
+            <ListView x:Name="Lists" Grid.Row="3" Grid.ColumnSpan="2" ItemSelected="Lists_ItemSelected"></ListView>
+            <Label Grid.Row="4" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" x:Name="Picked" Text="Item picked" FontSize="Title"/>
+            <Label x:Name="weight" Grid.Row="4" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" Text=" " FontSize="Title"></Label>
+            <Slider x:Name="MainSlider"  Grid.Row="5" Grid.ColumnSpan="2" Minimum="0" Maximum="10" ValueChanged="Slider_ValueChanged"/>
+            <Entry x:Name="GetOther" Placeholder="Please entry the calories!" IsVisible="false"  Grid.Row="5" Grid.ColumnSpan="2"></Entry>
+            <Button x:Name="calculate" Grid.Row="6" Grid.ColumnSpan="2" Text="Calculate" Clicked="calculate_Clicked" ></Button>
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

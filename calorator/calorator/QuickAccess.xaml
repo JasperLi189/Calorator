@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calorator.QuickAccess"
+             Title="QuickAccess">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Margin="10,10,10,10">
+                <Grid.RowDefinitions >
+                    <RowDefinition /> <!--0-->
+                    <RowDefinition Height="40" /> <!--1-->
+                    <RowDefinition /> <!--2-->
+                    <RowDefinition Height="40"/> <!--3-->
+                    <RowDefinition /> <!--4-->
+                    <RowDefinition Height="40"/> <!--5-->
+                    <RowDefinition /> <!--6-->
+                    <RowDefinition Height="40"/> <!--7-->
+                    <RowDefinition /> <!--8-->
+                    <RowDefinition Height="40"/> <!--9-->
+                    <RowDefinition /> <!--10-->
+                    <RowDefinition Height="40"/> <!--11-->
+                    <RowDefinition /> <!--12-->
+                    <RowDefinition Height="40"/> <!--13-->
+                    <RowDefinition /> <!--14-->
+                    <RowDefinition Height="40"/> <!--15-->
+                    <RowDefinition /> <!--16-->
+                    <RowDefinition Height="40"/> <!--17-->
+                    <RowDefinition /> <!--18-->
+                    <RowDefinition Height="40"/> <!--19-->
+                    <RowDefinition /> <!--20-->
+                    <RowDefinition Height="40"/> <!--21--> 
+                    <RowDefinition /> <!--22-->
+                    <RowDefinition Height="40"/> <!--23-->
+                    <RowDefinition Height="60"/> <!--24-->
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Image Source="bakkutteh.png" Grid.Row="0" Grid.Column="0"></Image>
+                <Image Source="chips.PNG" Grid.Row="0" Grid.Column="1"></Image>
+                <Button Text="Bak Kut Teh" Grid.Row="1" Grid.Column="0" Clicked="Button_Clicked"></Button>
+                <Button Text="Chips" Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked"></Button>
+                <Image Source="Burger.png" Grid.Row="2" Grid.Column="0"></Image>
+                <Image Source="chickenrice.png" Grid.Row="2" Grid.Column="1"></Image>
+                <Button Text="Burger" Grid.Row="3" Grid.Column="0" Clicked="Button_Clicked"></Button>
+                <Button Text="Chickenrice" Grid.Row="3" Grid.Column="1" Clicked="Button_Clicked"></Button>
+                <Image Source="coffee.png" Grid.Row="4" Grid.Column="0"></Image>
+                <Image Source="Friedrice.png" Grid.Row="4" Grid.Column="1"></Image>
+                <Button Text="Coffee" Grid.Row="5" Grid.Column="0" Clicked="Button_Clicked"></Button>
+                <Button Text="Friedrice" Grid.Row="5" Grid.Column="1" Clicked="Button_Clicked"></Button>
+                <Image Source="Friedchicken.png" Grid.Row="6" Grid.Column="0"></Image>
+                <Image Source="fries.png" Grid.Row="6" Grid.Column="1"></Image>
+                <Button Text="Friedchicken" Grid.Row="7" Grid.Column="0" Clicked="Button_Clicked"></Button>
+                <Button Text="Fries" Grid.Row="7" Grid.Column="1" Clicked="Button_Clicked"></Button>
+                <Image Source="Noodle.png" Grid.Row="8" Grid.Column="0"></Image>
+                <Image Source="Pasta.png" Grid.Row="8" Grid.Column="1"></Image>
+                <Button Text="Noodle" Grid.Row="9" Grid.Column="0" Clicked="Button_Clicked"></Button>
+                <Button Text="Pasta" Grid.Row="9" Grid.Column="1" Clicked="Button_Clicked"></Button>
+                <Image Source="Pizza.png" Grid.Row="10" Grid.Column="0"></Image>
+                <Image Source="Ramen.png" Grid.Row="10" Grid.Column="1"></Image>
+                <Button Text="Pizza" Grid.Row="11" Grid.Column="0" Clicked="Button_Clicked"></Button>
+                <Button Text="Ramen" Grid.Row="11" Grid.Column="1" Clicked="Button_Clicked"></Button>
+                <Image Source="Salad.png" Grid.Row="12" Grid.Column="0"></Image>
+                <Image Source="soup.png" Grid.Row="12" Grid.Column="1"></Image>
+                <Button Text="Salad" Grid.Row="13" Grid.Column="0" Clicked="Button_Clicked"></Button>
+                <Button Text="soup" Grid.Row="13" Grid.Column="1" Clicked="Button_Clicked"></Button>
+                <Image Source="Sushi.png" Grid.Row="14" Grid.Column="0"></Image>
+                <Image Source="tea.png" Grid.Row="14" Grid.Column="1"></Image>
+                <Button Text="Sushi" Grid.Row="15" Grid.Column="0" Clicked="Button_Clicked"></Button>
+                <Button Text="Tea" Grid.Row="15" Grid.Column="1" Clicked="Button_Clicked"></Button>
+                <Image Source="Beer1.png" Grid.Row="16" Grid.Column="0"></Image>
+                <Image Source="bubbletea.png" Grid.Row="16" Grid.Column="1"></Image>
+                <Button Text="Beer" Grid.Row="17" Grid.Column="0" Clicked="Button_Clicked"></Button>
+                <Button Text="Bubbletea" Grid.Row="17" Grid.Column="1" Clicked="Button_Clicked"></Button>
+                <Image Source="curry.png" Grid.Row="18" Grid.Column="0"></Image>
+                <Image Source="hotdog.png" Grid.Row="18" Grid.Column="1"></Image>
+                <Button Text="Curry" Grid.Row="19" Grid.Column="0" Clicked="Button_Clicked"></Button>
+                <Button Text="HotDog" Grid.Row="19" Grid.Column="1" Clicked="Button_Clicked"></Button>
+                <Image Source="hotpot.png" Grid.Row="20" Grid.Column="0"></Image>
+                <Image Source="icecream.png" Grid.Row="20" Grid.Column="1"></Image>
+                <Button Text="HotPot" Grid.Row="21" Grid.Column="0" Clicked="Button_Clicked"></Button>
+                <Button Text="Icecream" Grid.Row="21" Grid.Column="1" Clicked="Button_Clicked"></Button>
+                <Image Source="sandwich.png" Grid.Row="22" Grid.Column="0"></Image>
+                <Image Source="taco.png" Grid.Row="22" Grid.Column="1"></Image>
+                <Button Text="Sandwich" Grid.Row="23" Grid.Column="0" Clicked="Button_Clicked"></Button>
+                <Button Text="Taco" Grid.Row="23" Grid.Column="1" Clicked="Button_Clicked"></Button>
+                <Button x:Name="ToCalories" Text="Other Options" Clicked="ToCalories_Clicked" Grid.Row="24" Grid.ColumnSpan="2"></Button>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

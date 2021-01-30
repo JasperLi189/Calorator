@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calorator.Result"
+             Title="Result">
+    <ContentPage.Content>
+        <ContentView>
+            <StackLayout>
+                <Image Source="Result.png"></Image>
+                <Label Text="Recommanded intakes: " VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" ></Label>
+                <Label x:Name="Goal" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="Red"></Label>
+                <Label Text="Current caloris intakes: " VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large"></Label>
+                <Label x:Name="Test" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="OrangeRed"></Label>
+                <ProgressBar x:Name="Prograss" Margin="7"></ProgressBar>
+                <ListView x:Name="ItemDisplay" ItemsSource="{Binding ViewList}"></ListView>
+                <Button x:Name="Refresh" Text="Refresh Page" Clicked="Refresh_Clicked"></Button>
+                <Button x:Name="ClearAll" Text="Clear All" Clicked="ClearAll_Clicked" Grid.Row="0" Grid.Column="0"></Button>
+                <Button x:Name="ResetInfo" Text="Reset Information" Clicked="ResetInfo_Clicked" Grid.Row="0" Grid.Column="0"></Button>
+            </StackLayout>
+        </ContentView>
+    </ContentPage.Content>
+</ContentPage>
